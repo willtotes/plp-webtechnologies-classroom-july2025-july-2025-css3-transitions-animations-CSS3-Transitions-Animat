@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball - Week 7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <header>
+            <h1>Magic 8-Ball</h1>
+            <p class="subtitle">Ask your question, shake the ball, and reveal your destiny in the mystical darkness...</p>
+        </header>
+
+        <div class="content">
+            <div class="magic8BallContainer">
+                <div class="magic8Ball" id="magic8Ball">
+                    <div class="triangle"></div>
+                    <div class="window">
+                        <div class="answer hidden" id="answer">Your answer will appear here</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightPanel">
+                <div class="controls">
+                    <input type="text" class="questionInput" id="questionInput" placeholder="Ask your YES/NO question here...">
+                    <button class="shakeButton" id="shakeButton">
+                        <i class="fas faMagic"></i>
+                        Shake the 8-Ball
+                    </button>
+                </div>
+
+                <div class="history">
+                    <h2><i class="fas faHistory"></i> Question History</h2>
+                    <div class="historyList" id="historyList">
+
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="statValue" id="totalQuestions">0</div>
+                            <div class="statLabel">Questions Asked</div>
+                        </div>
+                        <div class="stat">
+                            <div class="statValue" id="positiveAnswers">0</div>
+                            <div class="statLabel">Positive Answers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="statValue" id="negativeAnswers">0</div>
+                            <div class="statLabel">Negative Answers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>How to Use the Magic 8-Ball</h2>
+            <p>1. Think carefully about your yes/no question</p>
+            <p>2. Type your question in the input field</p>
+            <p>3. Click the "Shake the 8-Ball" button or click directly on the 8-Ball</p>
+            <p>4. Watch the animation and receive your answer</p>
+            <p>5. Check your question history and statistics below</p>
+        </div>
+
+        <footer>
+            <p>&copy 2025 - Will Tsotetsi | Created with CSS3 animations and JavaScript functions</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
